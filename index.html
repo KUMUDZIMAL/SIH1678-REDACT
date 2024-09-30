@@ -5,15 +5,16 @@
 <head>
     <meta charset="utf-8"/>
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
-    <title>Weguard / home-2</title>
+    <title>Weguard</title>
     <meta content="" name="description"/>
     <meta content="" name="keywords"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta content="telephone=no" name="format-detection"/>
     <meta name="HandheldFriendly" content="true"/>
     <link rel="stylesheet" href="assets/css/master.css"/>
+    <link rel="stylesheet" href="assets/css/chatbot.css"/>
     <!-- SWITCHER-->
-    <link href="assets/plugins/switcher/css/switcher.css" rel="stylesheet" id="switcher-css" media="all"/>
+    <!-- <link href="assets/plugins/switcher/css/switcher.css" rel="stylesheet" id="switcher-css" media="all"/> -->
     <link href="assets/plugins/switcher/css/color1.css" rel="alternate stylesheet" title="color1" media="all"/>
     <link href="assets/plugins/switcher/css/color2.css" rel="alternate stylesheet" title="color2" media="all"/>
     <link href="assets/plugins/switcher/css/color3.css" rel="alternate stylesheet" title="color3" media="all"/>
@@ -27,7 +28,7 @@
     
     <div data-header="sticky" data-header-top="200" class="l-theme animated-css">
       <!-- Start Switcher-->
-      <div class="switcher-wrapper">
+      <!-- <div class="switcher-wrapper">
         <div class="demo_changer">
           <div class="demo-icon color-primary"><i class="fa fa-cog fa-spin fa-2x"></i></div>
           <div class="form_holder">
@@ -38,7 +39,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <!-- end switcher-->
       
       <header class="header">
@@ -66,17 +67,17 @@
         <div class="header-main">
           <div class="container">
             <div class="row">
-              <div class="col-xs-12"><a href="home-2.html" class="logo"><img src="assets/media/general/logo_type-c.png" alt="Logo" class="logo__img img-responsive"/></a>
+              <div class="col-xs-12"><a href="index.html" class="logo"><img src="assets/media/general/logo_type-c.png" alt="Logo" class="logo__img img-responsive"/></a>
                 <div class="header-nav">
                  
               
                   <nav class="navbar yamm">
                     <div id="navbar-collapse-1" class="navbar-collapse collapse">
                       <ul class="nav navbar-nav">
-                        <li class="dropdown"><a href="home-2.html">home</a>
+                        <li class="dropdown"><a href="index.html">home</a>
                           <ul role="menu" class="dropdown-menu">
                        
-                            <li><a href="home-2.html">home</a></li>
+                            <li><a href="index.html">home</a></li>
                           </ul>
                         </li>
                         <li class="dropdown"><a href="services.html">Services</a>
@@ -269,7 +270,7 @@
             </div>
           </li>
           <li class="b-advantages-4__item">
-            <div class="b-advantages-4__inner"><i class="b-advantages-4__icon flaticon-internet"></i>
+            <div class="b-advantages-4__inner" id="chat"><i class="b-advantages-4__icon flaticon-internet"></i>
               <div class="b-advantages-4__title">Real-Time Chatbot Assistance</div><i class="b-advantages-4__decor pe-7s-angle-down"></i>
               <div class="b-advantages-4__text">Interact with our chatbot to easily generate synthetic data and redact sensitive information from text, images, and videos. The chatbot guides users in specifying their redaction needs and provides real-time assistance, ensuring effective data protection while maintaining usability.</div>
             </div>
@@ -332,44 +333,100 @@
       <section style="background-image: url(assets/media/components/b-type-f/bg-1.jpg)" data-jarallax="{&quot;type&quot;: &quot;scroll-opacity&quot;}" class="b-type-f section-bg section-bg_grey-2 jarallax wow">
         <div class="section__inner clearfix">
           <div class="text-center">
-            <h2 class="b-type-f__title ui-title-block">The Data Protection Features
+            <h2 class="b-type-f__title ui-title-block">Proof of Concept of RE-DACT 
+
             </h2>
-            <div class="b-type-f__subtitle ui-subtitle-block">At RE-DACT, we offer cutting-edge data privacy solutions tailored to secure your sensitive information across diverse formats.
+            <div class="b-type-f__subtitle ui-subtitle-block">We will be implementing the redaction solution in 36 hour hackathon through the following phases.
             </div>
             <div class="ui-decor-type-1 center-block"></div>
           </div>
           <div class="b-type-f__decor"><img src="assets/media/components/b-type-f/icon.png" alt="icon"/></div>
           <div class="b-type-f__left-block">
             <dl class="b-type-f__list-desription list-desription list-desription_right-align">
-              <dt><i class="icon pe-7s-pin"></i>End-to-End Encryption
+              <dt>Phase 1: Planning and Requirements Analysis (4 hours)
 
               </dt>
-              <dd>We integrate AES-256 encryption to protect data during transmission and storage, safeguarding it from unauthorized access. This technology ensures that sensitive information remains confidential throughout the redaction process.
-
+              <dd>
+<ul>
+                <li>Assigned Team Roles: NLP Expert, Software Engineer, Frontend Developer, Security Specialist, DevOps Engineer, Quality Assurance Lead.</li>
+                <li>Define the project scope: Develop a secure redaction tool with gradational control for text, images, and videos.</li>
+                <li>Gather and prioritize requirements: Sensitive data identification, customizable redaction levels, synthetic data generation, secure data handling.</li>
+                <li>Select core technologies: Python, Hugging Face Transformers for NLP, React for frontend, FastAPI for backend, Quantum-Resistant Tokenization, Blockchain-Based Audit Trail.</li>
+              </ul>
               </dd>
-              <dt><i class="icon pe-7s-airplay"></i>Role-Based Access Control
+              <dt>Phase 2: Design and Architecture (4 hours)
               </dt>
-              <dd>Implementing role-based access control (RBAC) restricts data access based on user roles, using technologies such as OAuth2 for secure authentication. This feature prevents unauthorized users from accessing or modifying sensitive data.
-              </dd>
-              <dt><i class="icon pe-7s-coffee"></i>
-                Data Masking and Tokenization
+              <dd>
+<ul>
+                <li>Sketch the high-level system architecture with NLP module, Redaction Engine, Synthetic Data Generator, Secure Backend, and Blockchain Integration.</li>
+                <li>Design the database schema using PostgreSQL or MongoDB with Quantum-Resistant Encryption.</li>
+                <li>Create wireframes with sliders for redaction control, file upload, and redacted output, incorporating Biometric Authentication and Augmented Reality Visualizations.</li>
+              </ul></dd>
+              <dt>
+                Phase 3: Rapid Development - PoC Stage (24 hours)
+
                 </dt>
-              <dd> We use data masking and tokenization to obscure sensitive information. For tokenization, we replace sensitive data with unique tokens using secure token vaults, ensuring that original data is protected while retaining usability for authorized analysis.
+              <dd> 
+<ul>
+<li>
+  Data Acquisition: Gather diverse datasets and apply advanced preprocessing using spaCy, Pillow, OpenCV, and TensorFlow Data Validation.
+  </li>
+  <li>NLP Model Development: Fine-tune models like BERT, RoBERTa, and GPT-3 for NER, text summarization, and synthetic data generation.
+  </li>
+  <li>Redaction Engine: Implement gradational redaction logic combining rule-based and machine learning methods with Differential Privacy Techniques.
+  </li>
+  <li>Secure Backend: Develop a FastAPI-based application with MongoDB or PostgreSQL, integrating Blockchain-Based Logging and Quantum-Resistant Encryption.
+  </li>
 
+
+</ul>
               </dd>
             </dl>
           </div>
           <div class="b-type-f__right-block">
             <dl class="b-type-f__list-desription list-desription">
-              <dt><i class="icon pe-7s-helm"></i>Fully Compliant & Secure Platform
+              <dt>   Phase 4: Testing and Evaluation (2 hours)
               </dt>
-              <dd>Our redaction services ensure compliance with industry standards and regulations.
+              <dd>
+
+             
+
+<ul><li>Conducted unit tests for individual components using pytest or unittest, performed integration testing to ensure end-to-end functionality, and gathered feedback from the project team to make necessary adjustments.</li></ul>
               </dd>
-              <dt><i class="icon pe-7s-diamond"></i>Secure Data Auditing</dt>
-              <dd>Our system includes robust auditing mechanisms, employing logging frameworks such as ELK Stack (Elasticsearch, Logstash, Kibana) to track and review data access and modifications, ensuring compliance and identifying potential security breaches.
+              <dt>Phase 5: Deployment and Presentation (2 hours)
+
+                </dt>
+              <dd><ul>
+<li>Deployment: Deployed the PoC solution to a serverless platform like AWS Lambda or Google Cloud Functions, leveraging Auto-Scaling and Fault Tolerance capabilities for high availability and scalability.</li>
+                
+ <li> Presentation: Prepared a concise presentation highlighting the key features of the RE-DACT solution, including its technical approach and future roadmap, and presented it to the hackathon judges.</li>
+
+              </ul>
               </dd>
-              <dt><i class="icon pe-7s-share"></i>Real-Time Notifications</dt>
-              <dd>Our token-based notification system enhances data security by integrating real-time alerts and monitoring. When sensitive data is tokenized, secure tokens replace the original information, and the system tracks all access and modifications. Notifications are sent to the original data owner whenever a tokenized file is accessed or unredacted, ensuring transparency and control over sensitive information.</dd>
+              <dt>Phase 6: Future Enhancements
+
+                
+</dt>
+                <dd>
+                  <ul>
+                    <li>User Feedback Incorporation: Plan to gather user feedback for continuous improvement.</li>
+                    <li>                Scalability Considerations: Explore options for enhancing scalability and performance based on initial deployment insights.</li>
+                  </ul>
+                </dd>
+              <dt>Key Highlights:
+              </dt>
+              <dd>
+                
+                <ul>
+                <li>Defined a secure redaction tool with gradational control as the project scope.</li>
+
+                <li>Prioritized requirements for sensitive data identification, customizable redaction levels, synthetic data generation, and secure data handling.</li>
+                
+                <li>Selected a tech stack focused on advanced NLP, scalable backend, and cutting-edge security.</li>
+                
+                <li>Established comprehensive success criteria covering accuracy, efficiency, data security, performance, usability, and competitiveness.</li>
+                
+                <li>Assembled a cross-functional team with expertise in NLP, software engineering, and user experience.</li></ul></dd>
             </dl>
           </div>
           <div class="b-type-f__center-block">
@@ -401,6 +458,10 @@
         <div class="b-type-d section-bg b-type-d_mod-a section-table__inner"></div>
         <!-- end b-type-d-->
       </div>
+      <div class="chatbot-button" id="chatbotButton">
+        <img src="assets/IMages/message.png" alt="Chatbot" />
+    </div>
+    
       <footer class="footer">
         <div class="footer__main footer__main_mod-a parallax-bg parallax-dark">
           <ul class="bg-slideshow">
@@ -411,7 +472,7 @@
           <div class="parallax__inner">
             <div class="container">
               <div class="row">
-                <div class="col-xs-12"><a href="home-2.html" class="footer__logo"><img src="assets/media/general/logo_type-b.png" alt="Logo" class="img-responsive center-block"/></a></div>
+                <div class="col-xs-12"><a href="index.html" class="footer__logo"><img src="assets/media/general/logo_type-b.png" alt="Logo" class="img-responsive center-block"/></a></div>
               </div>
               <div class="row">
                 <div class="col-sm-6">
@@ -454,7 +515,7 @@
         <div class="copyright">
           <div class="container">
             <div class="row">
-              <div class="col-xs-12">Copyrights 2024<a href="home-2.html" class="copyright__link"> We Guard Redaction Services</a> All rights reserved.<a href="home-2.html" class="copyright__link-2">Privacy Policy</a><a href="home-2.html" class="copyright__link-2">Terms & Conditions</a></div>
+              <div class="col-xs-12">Copyrights 2024<a href="index.html" class="copyright__link"> We Guard Redaction Services</a> All rights reserved.<a href="home-2.html" class="copyright__link-2">Privacy Policy</a><a href="home-2.html" class="copyright__link-2">Terms & Conditions</a></div>
             </div>
           </div>
         </div>
@@ -463,7 +524,14 @@
     </div>
     <!-- end layout-theme-->
     
-    
+    <script>
+      document.getElementById('chat').addEventListener('click', function() {
+        window.location.href = 'chatbot.htm'; 
+      });
+      document.getElementById('chatbotButton').addEventListener('click', function() {
+      window.location.href = 'chatbot.htm'; 
+    });
+    </script>
     <script src="assets/js/jquery.js"></script> 
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>

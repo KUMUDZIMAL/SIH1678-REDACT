@@ -1,0 +1,24 @@
+.chatbot-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white; /* Pink color for the button */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.chatbot-button img {
+    width: 70%;
+    height: 70%;
+}
+
+.chatbot-button:hover {
+    background-color: White; /* Darker pink on hover */
+}

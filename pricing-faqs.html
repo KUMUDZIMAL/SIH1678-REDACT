@@ -5,15 +5,16 @@
 <head>
     <meta charset="utf-8"/>
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
-    <title>Weguard / Contact</title>
+    <title>Weguard / Pricing</title>
     <meta content="" name="description"/>
     <meta content="" name="keywords"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta content="telephone=no" name="format-detection"/>
     <meta name="HandheldFriendly" content="true"/>
     <link rel="stylesheet" href="assets/css/master.css"/>
+    <link rel="stylesheet" href="assets/css/chatbot.css"/>
     <!-- SWITCHER-->
-    <link href="assets/plugins/switcher/css/switcher.css" rel="stylesheet" id="switcher-css" media="all"/>
+    <!-- <link href="assets/plugins/switcher/css/switcher.css" rel="stylesheet" id="switcher-css" media="all"/> -->
     <link href="assets/plugins/switcher/css/color1.css" rel="alternate stylesheet" title="color1" media="all"/>
     <link href="assets/plugins/switcher/css/color2.css" rel="alternate stylesheet" title="color2" media="all"/>
     <link href="assets/plugins/switcher/css/color3.css" rel="alternate stylesheet" title="color3" media="all"/>
@@ -28,7 +29,7 @@
     
     <div data-header="sticky" data-header-top="200" class="l-theme animated-css">
       <!-- Start Switcher-->
-      <div class="switcher-wrapper">
+      <!-- <div class="switcher-wrapper">
         <div class="demo_changer">
           <div class="demo-icon color-primary"><i class="fa fa-cog fa-spin fa-2x"></i></div>
           <div class="form_holder">
@@ -39,7 +40,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <!-- end switcher-->
       
       <header class="header">
@@ -67,16 +68,16 @@
         <div class="header-main">
           <div class="container">
             <div class="row">
-              <div class="col-xs-12"><a href="home-2.html" class="logo"><img src="assets/media/general/logo_type-c.png" alt="Logo" class="logo__img img-responsive"/></a>
+              <div class="col-xs-12"><a href="index.html" class="logo"><img src="assets/media/general/logo_type-c.png" alt="Logo" class="logo__img img-responsive"/></a>
                 <div class="header-nav">
              
                
                   <nav class="navbar yamm">
                     <div id="navbar-collapse-1" class="navbar-collapse collapse">
                       <ul class="nav navbar-nav">
-                        <li class="dropdown"><a href="home-2.html">home</a>
+                        <li class="dropdown"><a href="index.html">home</a>
                           <ul role="menu" class="dropdown-menu">
-                            <li><a href="home-2.html">home</a></li>
+                            <li><a href="index.html">home</a></li>
                        
                           </ul>
                         </li>
@@ -125,7 +126,7 @@
               </div>
               <div class="col-sm-5">
                 <ol class="breadcrumb">
-                  <li><a href="home-2.html">home</a></li>
+                  <li><a href="index.html">home</a></li>
                   <li class="active">pricing</li>
                 </ol>
               </div>
@@ -149,7 +150,7 @@
                 <div class="b-pricing__inner">
                   <div class="b-pricing-price">
           
-                    <div class="b-pricing-price__number">Free</div>
+                    <div class="b-pricing-price__number" id="free">Free</div>
                   </div>
                   <h3 class="b-pricing__title">basic security</h3>
                 </div>
@@ -281,7 +282,7 @@
 <li class="b-pricing-list__item">Automated Redaction Workflow: Streamlined process for handling large volumes of data with minimal manual effort.</li>
 <li class="b-pricing-list__item">Synthetic Data Generation: Generate synthetic data to replace sensitive information for safe analysis and training.</li>
 
-                </ul><a href="home-2.html" class="b-pricing__btn btn btn-primary btn-effect">buy package</a>
+                </ul><a href="index.html" class="b-pricing__btn btn btn-primary btn-effect">buy package</a>
               </section>
               <!-- end b-pricing-->
             </div>
@@ -292,6 +293,9 @@
           </div>
         </div>
       </div>
+      <div class="chatbot-button" id="chatbotButton">
+        <img src="assets/IMages/message.png" alt="Chatbot" />
+    </div>
       <footer class="footer">
         <div class="footer__main footer__main_mod-a parallax-bg parallax-dark">
           <ul class="bg-slideshow">
@@ -302,7 +306,7 @@
           <div class="parallax__inner">
             <div class="container">
               <div class="row">
-                <div class="col-xs-12"><a href="home-2.html" class="footer__logo"><img src="assets/media/general/logo_type-b.png" alt="Logo" class="img-responsive center-block"/></a></div>
+                <div class="col-xs-12"><a href="index.html" class="footer__logo"><img src="assets/media/general/logo_type-b.png" alt="Logo" class="img-responsive center-block"/></a></div>
               </div>
               <div class="row">
                 <div class="col-sm-6">
@@ -345,15 +349,18 @@
         <div class="copyright">
           <div class="container">
             <div class="row">
-              <div class="col-xs-12">Copyrights 2024<a href="home-2.html" class="copyright__link"> We Guard Redaction Services</a> All rights reserved.<a href="home-2.html" class="copyright__link-2">Privacy Policy</a><a href="home-2.html" class="copyright__link-2">Terms & Conditions</a></div>
+              <div class="col-xs-12">Copyrights 2024<a href="index.html" class="copyright__link"> We Guard Redaction Services</a> All rights reserved.<a href="home-2.html" class="copyright__link-2">Privacy Policy</a><a href="home-2.html" class="copyright__link-2">Terms & Conditions</a></div>
             </div>
           </div>
         </div>
       </footer>
     </div>
     <!-- end layout-theme-->
-    
-    
+     <script>
+    document.getElementById('chatbotButton').addEventListener('click', function() {
+      window.location.href = 'chatbot.htm'; 
+    });
+  </script>
     <script src="assets/js/jquery.js"></script> 
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>

@@ -2708,7 +2708,8 @@ body {
 }
 
 .b-pricing .b-pricing-price__number {
-  font: 700 56px 'Roboto Condensed';
+  margin-top: 25px;
+  font: 700 45px 'Roboto Condensed';
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   text-transform: uppercase;
@@ -3130,6 +3131,7 @@ body {
 
 .section-title-page {
   height: 300px;
+  width: 200%;
 }
 
 .b-title-page {
@@ -3334,11 +3336,12 @@ body {
   width: 50%;
   padding-right: 253px;
   padding-bottom: 60px;
-  text-align: right;
+  text-align: center;
 }
 
 .b-type-f__list-desription {
   max-width: 370px;
+  text-align: center;
 }
 
 .b-type-f__list-desription dd {
@@ -3350,6 +3353,8 @@ body {
   bottom: 0;
   left: 50%;
   margin-left: -207px;
+  margin-bottom: 550px;
+
 }
 
 .b-type-f__right-block {

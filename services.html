@@ -11,8 +11,9 @@
     <meta content="telephone=no" name="format-detection"/>
     <meta name="HandheldFriendly" content="true"/>
     <link rel="stylesheet" href="assets/css/master.css"/>
+    <link rel="stylesheet" href="assets/css/chatbot.css"/>
     <!-- SWITCHER-->
-    <link href="assets/plugins/switcher/css/switcher.css" rel="stylesheet" id="switcher-css" media="all"/>
+    <!-- <link href="assets/plugins/switcher/css/switcher.css" rel="stylesheet" id="switcher-css" media="all"/> -->
     <link href="assets/plugins/switcher/css/color1.css" rel="alternate stylesheet" title="color1" media="all"/>
     <link href="assets/plugins/switcher/css/color2.css" rel="alternate stylesheet" title="color2" media="all"/>
     <link href="assets/plugins/switcher/css/color3.css" rel="alternate stylesheet" title="color3" media="all"/>
@@ -27,7 +28,7 @@
     
     <div data-header="sticky" data-header-top="200" class="l-theme animated-css">
       <!-- Start Switcher-->
-      <div class="switcher-wrapper">
+      <!-- <div class="switcher-wrapper">
         <div class="demo_changer">
           <div class="demo-icon color-primary"><i class="fa fa-cog fa-spin fa-2x"></i></div>
           <div class="form_holder">
@@ -38,7 +39,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <!-- end switcher-->
       
       <header class="header">
@@ -66,16 +67,16 @@
         <div class="header-main">
           <div class="container">
             <div class="row">
-              <div class="col-xs-12"><a href="home-2.html" class="logo"><img src="assets/media/general/logo_type-c.png" alt="Logo" class="logo__img img-responsive"/></a>
+              <div class="col-xs-12"><a href="index.html" class="logo"><img src="assets/media/general/logo_type-c.png" alt="Logo" class="logo__img img-responsive"/></a>
                 <div class="header-nav">
         
               
                   <nav class="navbar yamm">
                     <div id="navbar-collapse-1" class="navbar-collapse collapse">
                       <ul class="nav navbar-nav">
-                        <li class="dropdown"><a href="home-2.html">home</a>
+                        <li class="dropdown"><a href="index.html">home</a>
                           <ul role="menu" class="dropdown-menu">
-                            <li><a href="home-2.html">home</a></li>
+                            <li><a href="index.html">home</a></li>
           
                           </ul>
                         </li>
@@ -118,12 +119,12 @@
             <div class="row">
               <div class="col-sm-7">
                 <h1 class="b-title-page">what we do</h1>
-                <div class="b-title-page__info">We provide cutting-edge redaction, data anonymization, and synthetic data generation solutions for various industries. Our services ensure compliance with privacy regulations while safeguarding sensitive information across all file types, including text, images, and videos. </div>
+                <div class="b-title-page__info">We provide cutting-edge redaction, data anonymization, and <br>synthetic data generation solutions for various industries. Our <br>services ensure compliance with privacy regulations while <br> safeguarding sensitive information across all file types, including <br>text, images, and videos. </div>
                 <!-- end b-title-page-->
               </div>
               <div class="col-sm-5">
                 <ol class="breadcrumb">
-                  <li><a href="home-2.html">home</a></li>
+                  <li><a href="index.html">home</a></li>
                   <li class="active">our services</li>
                 </ol>
               </div>
@@ -208,7 +209,7 @@
               <div class="b-advantages-4__text">Leveraging advanced synthetic data generation to create realistic but anonymized datasets. Our token-based system allows for the generation of synthetic data that masks original information, with unredaction possible only through our secure platform.</div>
             </div>
           </li>
-          <li class="b-advantages-4__item">
+          <li class="b-advantages-4__item" id="chat">
             <div class="b-advantages-4__inner"><i class="b-advantages-4__icon flaticon-internet"></i>
               <div class="b-advantages-4__title">Real-Time Chatbot Assistance</div><i class="b-advantages-4__decor pe-7s-angle-down"></i>
               <div class="b-advantages-4__text">Interact with our chatbot to easily generate synthetic data and redact sensitive information from text, images, and videos. The chatbot guides users in specifying their redaction needs and provides real-time assistance, ensuring effective data protection while maintaining usability.</div>
@@ -339,7 +340,9 @@
       </div>
     
       
-        
+      <div class="chatbot-button" id="chatbotButton">
+        <img src="assets/IMages/message.png" alt="Chatbot" />
+    </div> 
    
       <footer class="footer">
         <div class="footer__main footer__main_mod-a parallax-bg parallax-dark">
@@ -351,7 +354,7 @@
           <div class="parallax__inner">
             <div class="container">
               <div class="row">
-                <div class="col-xs-12"><a href="home-2.html" class="footer__logo"><img src="assets/media/general/logo_type-b.png" alt="Logo" class="img-responsive center-block"/></a></div>
+                <div class="col-xs-12"><a href="index.html" class="footer__logo"><img src="assets/media/general/logo_type-b.png" alt="Logo" class="img-responsive center-block"/></a></div>
               </div>
               <div class="row">
                 <div class="col-sm-6">
@@ -394,14 +397,21 @@
         <div class="copyright">
           <div class="container">
             <div class="row">
-              <div class="col-xs-12">Copyrights 2024<a href="home-2.html" class="copyright__link"> We Guard Redaction Services</a> All rights reserved.<a href="home-2.html" class="copyright__link-2">Privacy Policy</a><a href="home-2.html" class="copyright__link-2">Terms & Conditions</a></div>
+              <div class="col-xs-12">Copyrights 2024<a href="index.html" class="copyright__link"> We Guard Redaction Services</a> All rights reserved.<a href="home-2.html" class="copyright__link-2">Privacy Policy</a><a href="home-2.html" class="copyright__link-2">Terms & Conditions</a></div>
             </div>
           </div>
         </div>
       </footer>
     </div>
     <!-- end layout-theme-->
-    
+    <script>
+      document.getElementById('chatbotButton').addEventListener('click', function() {
+        window.location.href = 'chatbot.htm'; 
+      });
+      document.getElementById('chat').addEventListener('click', function() {
+      window.location.href = 'chatbot.htm'; 
+    });
+    </script>
     
     <script src="assets/js/jquery.js"></script> 
     <script src="assets/js/custom.js"></script>
